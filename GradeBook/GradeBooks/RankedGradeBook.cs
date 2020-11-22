@@ -42,7 +42,7 @@ namespace GradeBook.GradeBooks
             {
                 Console.WriteLine("Ranked-grading requires at least of 5 students with grades in order to properly calculate a student's overall grade");
             }
-
+            else
             base.CalculateStatistics();
         }
 
@@ -52,6 +52,7 @@ namespace GradeBook.GradeBooks
             {
                 Console.WriteLine("Ranked-grading requires at least of 5 students with grades in order to properly calculate a student's overall grade");
             }
+            else
             base.CalculateStudentStatistics(name);
         }
     }
