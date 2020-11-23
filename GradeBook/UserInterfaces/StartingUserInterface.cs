@@ -43,7 +43,7 @@ namespace GradeBook.UserInterfaces
             var type = parts[2].ToLower();
             var isWeighted = bool.Parse(parts[3]);
             BaseGradeBook gradeBook;
-            if(type=="standard")
+            /*if(type=="standard")
             {
                 gradeBook = new StandardGradeBook(name, isWeighted);
             }else if(type =="ranked")
@@ -54,7 +54,7 @@ namespace GradeBook.UserInterfaces
             {
                 Console.WriteLine("{0} is not a supported type of gradebook, please try again.", type, isWeighted);
                 return;
-            }
+            }*/
             Console.WriteLine("Created gradebook {0}.", name);
             GradeBookUserInterface.CommandLoop(gradeBook);
         }
