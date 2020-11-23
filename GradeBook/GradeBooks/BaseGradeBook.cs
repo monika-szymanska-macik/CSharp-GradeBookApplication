@@ -123,6 +123,13 @@ namespace GradeBook.GradeBooks
                 case 'F':
                     return 0;
             }
+            if(IsWeighted)
+            switch(studentType)
+            {
+                case 'Honors' || 'DualEnrolled'
+                    return +1;
+
+            }
             return 0;
         }
 
