@@ -21,7 +21,7 @@ namespace GradeBook.GradeBooks
             Name = name;
             Students = new List<Student>();
             Type = new GradeBookType();
-            IsWeighted; 
+            IsWeighted = true; 
         }
 
         public void AddStudent(Student student)
@@ -123,13 +123,13 @@ namespace GradeBook.GradeBooks
                 case 'F':
                     return 0;
             }
-            if(IsWeighted)
-            switch(studentType)
-            {
-                case 'Honors' || 'DualEnrolled'
-                    return +1;
+            //if(isWeighted)
+            //switch(studentType)
+            //{
+            //    case 'Honors' || 'DualEnrolled'
+            //        return +1;
 
-            }
+            //}
             return 0;
         }
 
